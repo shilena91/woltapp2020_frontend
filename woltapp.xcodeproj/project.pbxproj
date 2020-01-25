@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		F391983123DC2006007432BA /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = F391983023DC2006007432BA /* restaurants.json */; };
 		F391983323DC23F4007432BA /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391983223DC23F4007432BA /* RestaurantData.swift */; };
 		F391983523DC2E4E007432BA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391983423DC2E4E007432BA /* DataLoader.swift */; };
+		F391987723DC801F007432BA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391987623DC801F007432BA /* TableViewCell.swift */; };
+		F391987A23DC9420007432BA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F391987923DC9420007432BA /* Kingfisher */; };
+		F391987C23DC9420007432BA /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F391987B23DC9420007432BA /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,7 @@
 		F391983023DC2006007432BA /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		F391983223DC23F4007432BA /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
 		F391983423DC2E4E007432BA /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		F391987623DC801F007432BA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F391987C23DC9420007432BA /* KingfisherSwiftUI in Frameworks */,
+				F391987A23DC9420007432BA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +118,7 @@
 				F391980223DC1FB0007432BA /* SceneDelegate.swift */,
 				F391980423DC1FB0007432BA /* ViewController.swift */,
 				F391980623DC1FB0007432BA /* Main.storyboard */,
+				F391987623DC801F007432BA /* TableViewCell.swift */,
 				F391980923DC1FB5007432BA /* Assets.xcassets */,
 				F391980B23DC1FB5007432BA /* LaunchScreen.storyboard */,
 				F391980E23DC1FB5007432BA /* Info.plist */,
@@ -153,6 +160,10 @@
 			dependencies = (
 			);
 			name = woltapp;
+			packageProductDependencies = (
+				F391987923DC9420007432BA /* Kingfisher */,
+				F391987B23DC9420007432BA /* KingfisherSwiftUI */,
+			);
 			productName = woltapp;
 			productReference = F39197FD23DC1FB0007432BA /* woltapp.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +236,9 @@
 				Base,
 			);
 			mainGroup = F39197F423DC1FAF007432BA;
+			packageReferences = (
+				F391987823DC941F007432BA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F39197FE23DC1FB0007432BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +286,7 @@
 				F391983523DC2E4E007432BA /* DataLoader.swift in Sources */,
 				F391980523DC1FB0007432BA /* ViewController.swift in Sources */,
 				F391980123DC1FB0007432BA /* AppDelegate.swift in Sources */,
+				F391987723DC801F007432BA /* TableViewCell.swift in Sources */,
 				F391983323DC23F4007432BA /* RestaurantData.swift in Sources */,
 				F391980323DC1FB0007432BA /* SceneDelegate.swift in Sources */,
 			);
@@ -602,6 +617,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F391987823DC941F007432BA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F391987923DC9420007432BA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F391987823DC941F007432BA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F391987B23DC9420007432BA /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F391987823DC941F007432BA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F39197F523DC1FAF007432BA /* Project object */;
 }

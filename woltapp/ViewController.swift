@@ -7,38 +7,38 @@
 //
 
 import UIKit
+import Kingfisher
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView1: UITableView!
     var restaurantData = [RestaurantData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        tableView1.delegate = self
+        tableView1.dataSource = self
+        
+        parse()
+        tableView1.rowHeight = 500
+    }
+    
+    func parse()
+    {
         if let fileLocation = Bundle.main.url(forResource: "restaurants", withExtension: "json")
         {
             if let data = try? Data(contentsOf: fileLocation)
             {
-                parse(json: data)
+                let decoder = JSONDecoder()
+                if let dataFromJson = try? decoder.decode(Restaurant.self, from: data)
+                {
+                    restaurantData = dataFromJson.restaurants
+                    sort()
+                }
+
             }
-        }
-        var i = 0
-        while (i < restaurantData.count)
-        {
-            print(Int(restaurantData[i].distance))
-            print("\n")
-            i += 1
-        }
-    }
-    
-    func parse(json: Data)
-    {
-        let decoder = JSONDecoder()
-        if let dataFromJson = try? decoder.decode(Restaurant.self, from: json)
-        {
-            restaurantData = dataFromJson.restaurants
-            sort()
         }
     }
 
@@ -93,4 +93,22 @@ class ViewController: UIViewController {
             i += 1
         }
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return restaurantData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView1.dequeueReusableCell(withIdentifier: "table1", for: indexPath) as! TableViewCell
+        let url = URL(string: restaurantData[indexPath.row].image)
+
+        cell.restaurantImg.kf.setImage(with: url)
+        cell.name.text = "\(restaurantData[indexPath.row].name)"
+        cell.descriptions.text = "\(restaurantData[indexPath.row].restaurantDescription)"
+        cell.delivery.text = "Delivery: \(restaurantData[indexPath.row].deliveryPrice / 100)" + ",90€"
+        return (cell)
+    }
+    
 }
+
+
