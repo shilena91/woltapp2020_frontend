@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F391980123DC1FB0007432BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391980023DC1FB0007432BA /* AppDelegate.swift */; };
+		F391980323DC1FB0007432BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391980223DC1FB0007432BA /* SceneDelegate.swift */; };
+		F391980523DC1FB0007432BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391980423DC1FB0007432BA /* ViewController.swift */; };
+		F391980823DC1FB0007432BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F391980623DC1FB0007432BA /* Main.storyboard */; };
+		F391980A23DC1FB5007432BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F391980923DC1FB5007432BA /* Assets.xcassets */; };
+		F391980D23DC1FB5007432BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F391980B23DC1FB5007432BA /* LaunchScreen.storyboard */; };
+		F391981823DC1FB5007432BA /* woltappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391981723DC1FB5007432BA /* woltappTests.swift */; };
+		F391982323DC1FB5007432BA /* woltappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391982223DC1FB5007432BA /* woltappUITests.swift */; };
+		F391983123DC2006007432BA /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = F391983023DC2006007432BA /* restaurants.json */; };
+		F391983323DC23F4007432BA /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391983223DC23F4007432BA /* RestaurantData.swift */; };
+		F391983523DC2E4E007432BA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391983423DC2E4E007432BA /* DataLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F391981423DC1FB5007432BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39197F523DC1FAF007432BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39197FC23DC1FB0007432BA;
+			remoteInfo = woltapp;
+		};
+		F391981F23DC1FB5007432BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39197F523DC1FAF007432BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39197FC23DC1FB0007432BA;
+			remoteInfo = woltapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F39197FD23DC1FB0007432BA /* woltapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = woltapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F391980023DC1FB0007432BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F391980223DC1FB0007432BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F391980423DC1FB0007432BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F391980723DC1FB0007432BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F391980923DC1FB5007432BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F391980C23DC1FB5007432BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F391980E23DC1FB5007432BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F391981323DC1FB5007432BA /* woltappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = woltappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F391981723DC1FB5007432BA /* woltappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woltappTests.swift; sourceTree = "<group>"; };
+		F391981923DC1FB5007432BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F391981E23DC1FB5007432BA /* woltappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = woltappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F391982223DC1FB5007432BA /* woltappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = woltappUITests.swift; sourceTree = "<group>"; };
+		F391982423DC1FB5007432BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F391983023DC2006007432BA /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		F391983223DC23F4007432BA /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
+		F391983423DC2E4E007432BA /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F39197FA23DC1FB0007432BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391981023DC1FB5007432BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391981B23DC1FB5007432BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F39197F423DC1FAF007432BA = {
+			isa = PBXGroup;
+			children = (
+				F39197FF23DC1FB0007432BA /* woltapp */,
+				F391981623DC1FB5007432BA /* woltappTests */,
+				F391982123DC1FB5007432BA /* woltappUITests */,
+				F39197FE23DC1FB0007432BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F39197FE23DC1FB0007432BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F39197FD23DC1FB0007432BA /* woltapp.app */,
+				F391981323DC1FB5007432BA /* woltappTests.xctest */,
+				F391981E23DC1FB5007432BA /* woltappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39197FF23DC1FB0007432BA /* woltapp */ = {
+			isa = PBXGroup;
+			children = (
+				F391983023DC2006007432BA /* restaurants.json */,
+				F391983223DC23F4007432BA /* RestaurantData.swift */,
+				F391983423DC2E4E007432BA /* DataLoader.swift */,
+				F391980023DC1FB0007432BA /* AppDelegate.swift */,
+				F391980223DC1FB0007432BA /* SceneDelegate.swift */,
+				F391980423DC1FB0007432BA /* ViewController.swift */,
+				F391980623DC1FB0007432BA /* Main.storyboard */,
+				F391980923DC1FB5007432BA /* Assets.xcassets */,
+				F391980B23DC1FB5007432BA /* LaunchScreen.storyboard */,
+				F391980E23DC1FB5007432BA /* Info.plist */,
+			);
+			path = woltapp;
+			sourceTree = "<group>";
+		};
+		F391981623DC1FB5007432BA /* woltappTests */ = {
+			isa = PBXGroup;
+			children = (
+				F391981723DC1FB5007432BA /* woltappTests.swift */,
+				F391981923DC1FB5007432BA /* Info.plist */,
+			);
+			path = woltappTests;
+			sourceTree = "<group>";
+		};
+		F391982123DC1FB5007432BA /* woltappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F391982223DC1FB5007432BA /* woltappUITests.swift */,
+				F391982423DC1FB5007432BA /* Info.plist */,
+			);
+			path = woltappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F39197FC23DC1FB0007432BA /* woltapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F391982723DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltapp" */;
+			buildPhases = (
+				F39197F923DC1FB0007432BA /* Sources */,
+				F39197FA23DC1FB0007432BA /* Frameworks */,
+				F39197FB23DC1FB0007432BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = woltapp;
+			productName = woltapp;
+			productReference = F39197FD23DC1FB0007432BA /* woltapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F391981223DC1FB5007432BA /* woltappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F391982A23DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltappTests" */;
+			buildPhases = (
+				F391980F23DC1FB5007432BA /* Sources */,
+				F391981023DC1FB5007432BA /* Frameworks */,
+				F391981123DC1FB5007432BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F391981523DC1FB5007432BA /* PBXTargetDependency */,
+			);
+			name = woltappTests;
+			productName = woltappTests;
+			productReference = F391981323DC1FB5007432BA /* woltappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F391981D23DC1FB5007432BA /* woltappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F391982D23DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltappUITests" */;
+			buildPhases = (
+				F391981A23DC1FB5007432BA /* Sources */,
+				F391981B23DC1FB5007432BA /* Frameworks */,
+				F391981C23DC1FB5007432BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F391982023DC1FB5007432BA /* PBXTargetDependency */,
+			);
+			name = woltappUITests;
+			productName = woltappUITests;
+			productReference = F391981E23DC1FB5007432BA /* woltappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F39197F523DC1FAF007432BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hoang Pham";
+				TargetAttributes = {
+					F39197FC23DC1FB0007432BA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F391981223DC1FB5007432BA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F39197FC23DC1FB0007432BA;
+					};
+					F391981D23DC1FB5007432BA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F39197FC23DC1FB0007432BA;
+					};
+				};
+			};
+			buildConfigurationList = F39197F823DC1FAF007432BA /* Build configuration list for PBXProject "woltapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F39197F423DC1FAF007432BA;
+			productRefGroup = F39197FE23DC1FB0007432BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F39197FC23DC1FB0007432BA /* woltapp */,
+				F391981223DC1FB5007432BA /* woltappTests */,
+				F391981D23DC1FB5007432BA /* woltappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F39197FB23DC1FB0007432BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F391983123DC2006007432BA /* restaurants.json in Resources */,
+				F391980D23DC1FB5007432BA /* LaunchScreen.storyboard in Resources */,
+				F391980A23DC1FB5007432BA /* Assets.xcassets in Resources */,
+				F391980823DC1FB0007432BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391981123DC1FB5007432BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391981C23DC1FB5007432BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F39197F923DC1FB0007432BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F391983523DC2E4E007432BA /* DataLoader.swift in Sources */,
+				F391980523DC1FB0007432BA /* ViewController.swift in Sources */,
+				F391980123DC1FB0007432BA /* AppDelegate.swift in Sources */,
+				F391983323DC23F4007432BA /* RestaurantData.swift in Sources */,
+				F391980323DC1FB0007432BA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391980F23DC1FB5007432BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F391981823DC1FB5007432BA /* woltappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F391981A23DC1FB5007432BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F391982323DC1FB5007432BA /* woltappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F391981523DC1FB5007432BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39197FC23DC1FB0007432BA /* woltapp */;
+			targetProxy = F391981423DC1FB5007432BA /* PBXContainerItemProxy */;
+		};
+		F391982023DC1FB5007432BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39197FC23DC1FB0007432BA /* woltapp */;
+			targetProxy = F391981F23DC1FB5007432BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F391980623DC1FB0007432BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F391980723DC1FB0007432BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F391980B23DC1FB5007432BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F391980C23DC1FB5007432BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F391982523DC1FB5007432BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F391982623DC1FB5007432BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F391982823DC1FB5007432BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F391982923DC1FB5007432BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F391982B23DC1FB5007432BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woltapp.app/woltapp";
+			};
+			name = Debug;
+		};
+		F391982C23DC1FB5007432BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/woltapp.app/woltapp";
+			};
+			name = Release;
+		};
+		F391982E23DC1FB5007432BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = woltapp;
+			};
+			name = Debug;
+		};
+		F391982F23DC1FB5007432BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARM9KE6EQA;
+				INFOPLIST_FILE = woltappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoang.woltappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = woltapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F39197F823DC1FAF007432BA /* Build configuration list for PBXProject "woltapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F391982523DC1FB5007432BA /* Debug */,
+				F391982623DC1FB5007432BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F391982723DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F391982823DC1FB5007432BA /* Debug */,
+				F391982923DC1FB5007432BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F391982A23DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F391982B23DC1FB5007432BA /* Debug */,
+				F391982C23DC1FB5007432BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F391982D23DC1FB5007432BA /* Build configuration list for PBXNativeTarget "woltappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F391982E23DC1FB5007432BA /* Debug */,
+				F391982F23DC1FB5007432BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F39197F523DC1FAF007432BA /* Project object */;
+}
