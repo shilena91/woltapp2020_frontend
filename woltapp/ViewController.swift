@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView1.dataSource = self
         
         parse()
-        tableView1.rowHeight = 500
+        tableView1.rowHeight = 400
     }
     
     func parse()
@@ -98,17 +98,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return restaurantData.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView1.dequeueReusableCell(withIdentifier: "table1", for: indexPath) as! TableViewCell
         let url = URL(string: restaurantData[indexPath.row].image)
 
         cell.restaurantImg.kf.setImage(with: url)
-        cell.name.text = "\(restaurantData[indexPath.row].name)"
-        cell.descriptions.text = "\(restaurantData[indexPath.row].restaurantDescription)"
+        cell.name.text = restaurantData[indexPath.row].name
+        cell.descriptions.text = restaurantData[indexPath.row].restaurantDescription
         cell.delivery.text = "Delivery: \(restaurantData[indexPath.row].deliveryPrice / 100)" + ",90€"
         return (cell)
     }
-    
 }
 
 
